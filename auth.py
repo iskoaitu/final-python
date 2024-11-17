@@ -11,7 +11,7 @@ def register():
         password = request.form['password']
         hashed_password = generate_password_hash(password, method='pbkdf2:sha256')
 
-        db = next(get_db())  # Получаем сессию базы данных
+        db = next(get_db())
         new_user = User(username=username, password=hashed_password)
         db.add(new_user)
         db.commit()
@@ -27,7 +27,7 @@ def login():
         username = request.form['username']
         password = request.form['password']
 
-        db = next(get_db())  # Получаем сессию базы данных
+        db = next(get_db())
         user = db.query(User).filter_by(username=username).first()
 
         if user and check_password_hash(user.password, password):
