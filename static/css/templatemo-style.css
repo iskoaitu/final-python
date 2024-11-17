@@ -598,7 +598,7 @@ section.sign-up {
 }
 
 footer {
-    background-color: #363e50;
+    background-color: #footer;
     line-height: 130px;
     text-align: center;
 }
@@ -634,7 +634,7 @@ footer ul li i {
     line-height: 36px!important;
     background-color: #fff;
     border-radius: 50%;
-    color: #363e50;
+    color: #a10e6e;
     transition: all 0.5s;
 }
 
@@ -955,7 +955,7 @@ section.contact-us {
     font-weight: 700;
     letter-spacing: 0.5px;
     text-transform: uppercase;
-    color: #121212;
+    color: #a10e6e;
 }
 
 .contact-us p {
@@ -966,14 +966,14 @@ section.contact-us {
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
-    color: #aaa;
+    color: #a10e6e;
 }
 
 .contact-us input {
     border-radius: 3px;
     padding-left: 15px;
     font-size: 13px;
-    color: #4a4a4a;
+    color: #a10e6e;
     background-color: #f4f4f4;
     outline: none!important;
     border: none;
@@ -989,7 +989,7 @@ section.contact-us {
     padding-left: 15px;
     padding-top: 10px;
     font-size: 13px;
-    color: #4a4a4a;
+    color: #a10e6e;
     background-color: #f4f4f4;
     outline: none;
     border: none;
@@ -1177,7 +1177,7 @@ section.map #map {
         margin-top: 20px;
     }
     footer {
-        background-color: #363e50;
+        background-color: #a10e6e;
         line-height: 40px;
         text-align: center;
     }

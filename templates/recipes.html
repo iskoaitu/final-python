@@ -1,27 +1,20 @@
 {% extends "base.html" %}
 {% block content %}
 <link rel="stylesheet" href="{{ url_for('static', filename='css/сrecept.css') }}">
-<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
-<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-theme.min.css') }}">
-<link rel="stylesheet" href="{{ url_for('static', filename='css/fontAwesome.css') }}">
-<link rel="stylesheet" href="{{ url_for('static', filename='css/hero-slider.css') }}">
-<link rel="stylesheet" href="{{ url_for('static', filename='css/owl-carousel.css') }}">
 <link rel="stylesheet" href="{{ url_for('static', filename='css/templatemo-style.css') }}">
 <link href="https://fonts.googleapis.com/css?family=Spectral:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
 <script src="static/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    <section class="page-heading">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>Our Menu</h1>
-                    <p>Here you will learn new things and taste delicious things. Breakfast, lunch, dinner, everything will be here.</p>
-                </div>
+<section class="page-heading">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Our Menu</h1>
+                <p>Here you will learn new things and taste delicious things. Breakfast, lunch, dinner, everything will be here.</p>
             </div>
         </div>
-    </section>
-
-
+    </div>
+</section>
 
 <div class="content-wrapper">
     <h2 class="page-title">Recipes</h2>
@@ -35,6 +28,25 @@
             </li>
         {% endfor %}
     </ul>
+    <h3 class="menu-title">Featured Dishes</h3>
+    <h3> Today </h3>
+    <div class="menu-section">
+        <div class="dish">
+            <img src="{{ url_for('static', filename='img/spaghetti-carbonara.webp') }}" alt="Spaghetti Carbonara" class="dish-image">
+            <h4>Spaghetti Carbonara</h4>
+            <p>A classic Italian pasta dish with creamy sauce, pancetta, and parmesan cheese.</p>
+        </div>
+        <div class="dish">
+            <img src="{{ url_for('static', filename='img/Caesar Salad.jpg') }}" alt="Caesar Salad" class="dish-image">
+            <h4>Caesar Salad</h4>
+            <p>Crisp romaine lettuce with creamy Caesar dressing, croutons, and grated parmesan.</p>
+        </div>
+        <div class="dish">
+            <img src="{{ url_for('static', filename='img/Grilled Salmon.png') }}" alt="Grilled Salmon" class="dish-image">
+            <h4>Grilled Salmon</h4>
+            <p>Fresh salmon filet grilled to perfection, served with a side of steamed vegetables.</p>
+        </div>
+    </div>
 </div>
 <footer>
     <p>&copy; 2024 Roblox Restaurant. All rights reserved.</p>
