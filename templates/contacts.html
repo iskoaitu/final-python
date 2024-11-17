@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/con.css') }}">
+
+<!-- Page Content -->
+<div class="contact-page">
+    <div class="info-container">
+        <!-- Working Hours on the Left -->
+        <div class="working-hours">
+            <h2>Working Hours</h2>
+            <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+            <p>Saturday: 10:00 AM - 4:00 PM</p>
+            <p>Sunday: Closed</p>
+        </div>
+
+        <!-- Info Us on the Right -->
+        <div class="contact-container">
+            <h2>info us</h2>
+            <p>Email: <a>230143@astanait.edu.kz</a></p>
+            <p>Phone: <a>+7 707 961 26 64</a></p>
+        </div>
+    </div>
+    <!-- Map Below Both Sections -->
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1262.0555901078458!2d71.41778169463947!3d51.090900324071654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x424585a605525605%3A0x4dff4a1973f7567e!2sAstana%20IT%20University!5e0!3m2!1sru!2skz!4v1695386909228!5m2!1sru!2skz"
+            loading="lazy" allowfullscreen style="border:0;"></iframe>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-column">
+            <p>&copy; 2024 Astana IT University</p>
+        </div>
+        <div class="footer-column">
+            <p>Designed by Roblox Team</p>
+        </div>
+        <div class="footer-column social">
+            <p>Follow us:
+               <a href="https://www.instagram.com/i_s_k_oo/profilecard/?igsh=MW1mOWs3bGs5ZTNsMg==" target="_blank" class="social-link">Instagram</a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+{% endblock %}

@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<div class="container">
+
+    <h1>Welcome to Our Restaurant</h1>
+    <p>Explore our exquisite dining options and cozy ambience!</p>
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="{{ url_for('static', filename='photos/home.png') }}" alt="Entrance">
+            <p>Home</p>
+        </div>
+        <div class="gallery-item">
+            <img src="{{ url_for('static', filename='photos/stol.png') }}" alt="Main Hall">
+            <p>Dining Table</p>
+        </div>
+        <div class="gallery-item">
+            <img src="{{ url_for('static', filename='photos/vip.png') }}" alt="VIP Room">
+            <p>VIP Room</p>
+        </div>
+        <div class="gallery-item">
+            <img src="{{ url_for('static', filename='photos/zal.png') }}" alt="Large table">
+            <p>Main Hall</p>
+        </div>
+    </div>
+</div>
+<div class="reviews-section">
+    <h2>What Our Customers Say</h2>
+    <div class="reviews">
+        <div class="review">
+            <p>"Amazing food and great service!"</p>
+            <span>- Aidana Z.</span>
+        </div>
+        <div class="review">
+            <p>"Best restaurant in town. Highly recommend."</p>
+            <span>- Shynggys A.</span>
+        </div>
+        <div class="review">
+            <p>"Best restaurant in Astana."</p>
+            <span>- Zhansaya M.</span>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    <p>&copy; 2024 Roblox Restaurant. All rights reserved.</p>
+</footer>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/chome.css') }}">
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+{% endblock %}

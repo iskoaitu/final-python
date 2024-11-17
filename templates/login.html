@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<link href="https://fonts.googleapis.com/css2?family=Aesthetic&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<form action="{{ url_for('auth.login') }}" method="post" class="login-form">
+    <label>Username: <input type="text" name="username" required></label><br>
+    <label>Password: <input type="password" name="password" required></label><br>
+    <button type="submit" class="login-button">Login</button>
+</form>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+{% endblock %}

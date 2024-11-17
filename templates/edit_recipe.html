@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Edit Recipe</h2>
+<form action="{{ url_for('recipe.edit_recipe', recipe_id=recipe.id) }}" method="post">
+    <label>Title: <input type="text" name="title" value="{{ recipe.title }}" required></label><br>
+    <label>Description: <textarea name="description" required>{{ recipe.description }}</textarea></label><br>
+    <button type="submit">Update Recipe</button>
+</form>
+{% endblock %}

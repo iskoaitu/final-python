@@ -1,0 +1,36 @@
+<!-- base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+
+    <!-- Подключение основного CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/chome.css') }}">
+
+    <!-- Подключение CSS для кнопок -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/butt.css') }}">
+</head>
+<body>
+    <!-- Навигация с кнопками -->
+    <div class="navbar">
+        <a href="/">Home</a>
+        {% if session.get('user_id') %}
+        <a href="/auth/logout">Logout</a>
+        {% else %}
+        <a href="/auth/login">Login</a>
+        <a href="/auth/register">Register</a>
+        {% endif %}
+        <a href="/recipes">Menu</a>
+        <a href="/contacts">Contacts</a>
+    </div>
+
+    <!-- Основное содержимое страниц -->
+    {% block content %}
+    {% endblock %}
+
+    <!-- Подключение JavaScript -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
