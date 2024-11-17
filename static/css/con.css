@@ -1,0 +1,100 @@
+/* New Styles for Contact Page Layout */
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 2000px;
+    margin-bottom: 20px;
+    gap: 20px; /* Added gap to create spacing between elements */
+}
+
+
+.working-hours, .contact-container {
+    width: 48%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 88px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.working-hours h2, .contact-container h2 {
+    color: #d4006f;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.map {
+    width: 100%;
+    max-width: 1900px;
+    margin-top: 20px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 700px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.reservation-section {
+    margin: 30px;
+    padding: 30px;
+    background-color: #ffe6f0;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 6000px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.reservation-section h2 {
+    font-size: 2em;
+    color: #d147a3;
+    margin-bottom: 20px;
+}
+
+.reservation-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.reservation-section label {
+    font-size: 1.2em;
+    color: #8a2c68;
+}
+
+.reservation-section input, .reservation-section button {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #d147a3;
+    border-radius: 5px;
+}
+
+.reservation-section button {
+    background-color: #d147a3;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.reservation-section button:hover {
+    background-color: #a10e6e;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap; /* Prevent items from wrapping to new lines */
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+

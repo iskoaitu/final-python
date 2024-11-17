@@ -1,0 +1,156 @@
+/* Center the main container */
+.recipe-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #fdfdfd;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center align the text inside the container */
+}
+
+/* Style for the title and description */
+.recipe-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.recipe-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.recipe-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Style for the comment form */
+.comment-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comment-form label {
+    font-size: 14px;
+    color: #333;
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.comment-form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/* Style for the file input row */
+.comment-form label[for="file"] {
+    font-weight: bold;
+    margin-top: 15px;
+    color: #444;
+}
+
+.comment-form input[type="file"] {
+    display: inline-block;
+    padding: 6px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/* Centered Submit Button */
+.submit-button {
+    background-color: #4cae4c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+.submit-button:hover {
+    background-color: #3c8d3c;
+}
+
+/* Style for the comments section */
+.comments-heading {
+    font-size: 20px;
+    margin-top: 30px;
+    color: #333;
+}
+
+.comments-list {
+    list-style: none;
+    padding: 0;
+}
+
+.comment-item {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 0;
+}
+
+.comment-content {
+    color: #444;
+    font-size: 14px;
+}
+
+.comment-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 4px;
+    margin-top: 8px;
+}
+
+/* Style for recipe control buttons */
+.recipe-controls {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.edit-link,
+.delete-button {
+    padding: 8px 16px;
+    font-size: 14px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Specific color for each button */
+.edit-link {
+    background-color: #ff85c2;
+}
+
+.edit-link:hover {
+    background-color: #b0005c;
+}
+
+.delete-button {
+    background-color: #4cae4c;
+}
+
+.delete-button:hover {
+    background-color: #3c8d3c;
+}

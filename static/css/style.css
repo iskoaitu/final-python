@@ -1,0 +1,52 @@
+/* Общий стиль для форм */
+.register-form, .login-form {
+    width: 300px;
+    margin: 300px 1090px 0;
+    padding: 40px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #f9f9f9;
+    font-family: 'Aesthetic', sans-serif; /* Применяем шрифт Aesthetic */
+}
+
+/* Стиль для меток */
+.register-form label, .login-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
+/* Стиль для полей ввода */
+.register-form input[type="text"],
+.register-form input[type="password"],
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Aesthetic', sans-serif; /* Применяем шрифт Aesthetic */
+}
+
+/* Стиль для кнопок */
+.register-button, .login-button {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 13px 40px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Aesthetic', sans-serif; /* Применяем шрифт Aesthetic */
+}
+
+.register-button:hover, .login-button:hover {
+    background-color: #ff85c2;
+}
+

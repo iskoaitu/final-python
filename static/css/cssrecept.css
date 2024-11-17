@@ -1,0 +1,86 @@
+/* Стиль для заголовка формы */
+.form-heading {
+    text-align: center;
+    font-family: 'Aesthetic', sans-serif; /* Примените нужный шрифт */
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Основной стиль для формы */
+.recipe-form {
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    font-family: 'Aesthetic', sans-serif;
+}
+
+/* Стиль для меток и полей ввода */
+.recipe-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.recipe-form input[type="text"],
+.recipe-form textarea,
+.recipe-form input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Aesthetic', sans-serif;
+}
+
+/* Специфичный стиль для текстового поля */
+.recipe-form textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+/* Стиль для кнопки отправки */
+.submit-button {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #ff85c2;
+}
+/* Стили для кнопки выбора файла */
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333; /* Цвет текста */
+    background-color: white; /* Белая кнопка */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-file-upload:hover {
+    background-color: #f0f0f0; /* Светло-серый цвет при наведении */
+}
+
+/* Стиль для отображения имени файла */
+.file-name-text {
+    margin-left: 15px; /* Увеличенное расстояние от кнопки */
+    font-size: 14px;
+    color: #666;
+    font-family: 'Arial', sans-serif; /* Новый шрифт */
+}
