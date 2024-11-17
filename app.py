@@ -1,12 +1,11 @@
 from flask import Flask, render_template
-from models import get_db, User, Recipe  # Убедитесь, что импортируете нужные модели и функцию get_db
+from models import get_db, User, Recipe 
 from auth import auth_blueprint
 from recipe import recipe_blueprint
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder="static", template_folder="templates")
 app.config['SECRET_KEY'] = 'supersecretkey'
 
-# Регистрация блюпринтов
 app.register_blueprint(auth_blueprint, url_prefix='/auth')
 app.register_blueprint(recipe_blueprint, url_prefix='/recipes')
 
