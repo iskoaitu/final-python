@@ -20,14 +20,13 @@ class CommentModel(BaseModel):
 async def upload_comment(content: str = Form(...), recipe_id: int = Form(...),
                          user_id: int = Form(...), file: UploadFile = None,
                          db: Session = Depends(get_db)):
-    user_id = 1 
 
     user = db.query(User).filter(User.id == user_id).first()
     if not user:
         raise HTTPException(status_code=400, detail="User not found")
 
     image_path = None
-    if file:
+    if file and file.filename:
         filename = secure_filename(file.filename)
         image_path = os.path.join("static/uploads", filename)
         with open(image_path, "wb") as image_file:
